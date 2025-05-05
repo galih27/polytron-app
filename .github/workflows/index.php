@@ -1,117 +1,63 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
-  <title>Linktree Style Dashboard</title>
+  <meta charset="UTF-8">
+  <title>Polytron App - Link Pilihan</title>
   <style>
-    /* Reset */
-    * {
-      box-sizing: border-box;
-    }
     body {
-      margin: 0;
-      background: linear-gradient(135deg, #667eea, #764ba2);
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      color: #fff;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      overflow: hidden;
-    }
-    .container {
-      background: rgba(255 255 255 / 0.1);
-      backdrop-filter: blur(12px);
-      border-radius: 20px;
-      width: 350px;
-      max-width: 90vw;
-      padding: 30px 25px 40px 25px;
+      font-family: Arial, sans-serif;
       text-align: center;
-      box-shadow: 0 8px 28px rgba(0,0,0,0.4);
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+      margin-top: 100px;
+      background-color: #f8f9fa;
     }
-    .profile-pic {
-      width: 120px;
-      height: 120px;
-      border-radius: 50%;
-      border: 4px solid #fff;
-      object-fit: cover;
-      margin-bottom: 20px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    .dropdown {
+      display: inline-block;
+      position: relative;
     }
-    h1 {
-      font-size: 2.2rem;
-      margin: 0 0 8px;
-      font-weight: 700;
-      user-select: none;
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background: #ffffff;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+      min-width: 250px;
+      border-radius: 8px;
+      z-index: 1;
     }
-    p.description {
-      font-size: 1rem;
-      margin: 0 0 30px;
-      font-weight: 400;
-      color: #ddd;
-      user-select: none;
-    }
-    .links {
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      gap: 15px;
-    }
-    .link-btn {
-      background: #fff;
-      color: #764ba2;
-      font-weight: 600;
-      font-size: 1.1rem;
-      padding: 15px;
-      border-radius: 12px;
+    .dropdown-content a {
+      color: #000;
+      padding: 12px 16px;
       text-decoration: none;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-      transition: background-color 0.25s ease, color 0.25s ease;
-      user-select: none;
+      display: block;
     }
-    .link-btn:hover,
-    .link-btn:focus {
-      background: #764ba2;
-      color: #fff;
-      outline: none;
+    .dropdown-content a:hover {
+      background-color: #f1f1f1;
     }
-    /* Mobile optimizations */
-    @media (max-height: 600px) {
-      .container {
-        padding: 20px 15px 25px 15px;
-      }
-      h1 {
-        font-size: 1.8rem;
-      }
-      .profile-pic {
-        width: 100px;
-        height: 100px;
-        margin-bottom: 15px;
-      }
-      .link-btn {
-        font-size: 1rem;
-        padding: 12px;
-      }
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+    .main-link {
+      font-size: 18px;
+      font-weight: bold;
+      padding: 14px 24px;
+      background-color: #007BFF;
+      color: white;
+      border-radius: 8px;
+      text-decoration: none;
     }
   </style>
 </head>
 <body>
-  <main class="container" role="main" aria-label="User Linktree Dashboard">
-    <img class="profile-pic" src="https://images.pexels.com/photos/771742/pexels-photo-771742.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=120&w=120" alt="User profile picture" />
-    <h1>Alex Johnson</h1>
-    <p class="description">Creative Designer &amp; Web Developer</p>
-    <nav class="links" aria-label="Social links">
-      <a class="link-btn" href="https://alexjohnson.com" target="_blank" rel="noopener noreferrer">Personal Website</a>
-      <a class="link-btn" href="https://twitter.com/alexjohnson" target="_blank" rel="noopener noreferrer">Twitter</a>
-      <a class="link-btn" href="https://instagram.com/alexjohnson" target="_blank" rel="noopener noreferrer">Instagram</a>
-      <a class="link-btn" href="https://www.linkedin.com/in/alexjohnson" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-      <a class="link-btn" href="mailto:alex@example.com" target="_blank" rel="noopener noreferrer">Contact Me</a>
-    </nav>
-  </main>
+
+  <h1>Selamat Datang di Polytron App</h1>
+
+  <div class="dropdown">
+    <a href="#" class="main-link">📎 Klik untuk Pilih Link</a>
+    <div class="dropdown-content">
+      <a href="https://example.com/link1">Download App Polytron 1</a>
+      <a href="https://example.com/link2">Download App Polytron 2</a>
+      <a href="https://example.com/link3">Download App Polytron 3</a>
+    </div>
+  </div>
+
 </body>
 </html>
-
