@@ -1,115 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
-<title>Linktree Style Dashboard</title>
-<style>
-  /* Reset */
-  * {
-    box-sizing: border-box;
-  }
-  body {
-    margin: 0;
-    background: linear-gradient(135deg, #667eea, #764ba2);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    overflow: hidden;
-  }
-  .container {
-    background: rgba(255 255 255 / 0.1);
-    backdrop-filter: blur(12px);
-    border-radius: 20px;
-    width: 350px;
-    max-width: 90vw;
-    padding: 30px 25px 40px 25px;
-    text-align: center;
-    box-shadow: 0 8px 28px rgba(0,0,0,0.4);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .profile-pic {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    border: 4px solid #fff;
-    object-fit: cover;
-    margin-bottom: 20px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-  }
-  h1 {
-    font-size: 2.2rem;
-    margin: 0 0 8px;
-    font-weight: 700;
-    user-select: none;
-  }
-  p.description {
-    font-size: 1rem;
-    margin: 0 0 30px;
-    font-weight: 400;
-    color: #ddd;
-    user-select: none;
-  }
-  .links {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-  }
-  .link-btn {
-    background: #fff;
-    color: #764ba2;
-    font-weight: 600;
-    font-size: 1.1rem;
-    padding: 15px;
-    border-radius: 12px;
-    text-decoration: none;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-    transition: background-color 0.25s ease, color 0.25s ease;
-    user-select: none;
-  }
-  .link-btn:hover,
-  .link-btn:focus {
-    background: #764ba2;
-    color: #fff;
-    outline: none;
-  }
-  /* Mobile optimizations */
-  @media (max-height: 600px) {
-    .container {
-      padding: 20px 15px 25px 15px;
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+  <title>Linktree Style Dashboard</title>
+  <style>
+    /* Reset */
+    * {
+      box-sizing: border-box;
     }
-    h1 {
-      font-size: 1.8rem;
+    body {
+      margin: 0;
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      overflow: hidden;
+    }
+    .container {
+      background: rgba(255 255 255 / 0.1);
+      backdrop-filter: blur(12px);
+      border-radius: 20px;
+      width: 350px;
+      max-width: 90vw;
+      padding: 30px 25px 40px 25px;
+      text-align: center;
+      box-shadow: 0 8px 28px rgba(0,0,0,0.4);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
     .profile-pic {
-      width: 100px;
-      height: 100px;
-      margin-bottom: 15px;
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      border: 4px solid #fff;
+      object-fit: cover;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    }
+    h1 {
+      font-size: 2.2rem;
+      margin: 0 0 8px;
+      font-weight: 700;
+      user-select: none;
+    }
+    p.description {
+      font-size: 1rem;
+      margin: 0 0 30px;
+      font-weight: 400;
+      color: #ddd;
+      user-select: none;
+    }
+    .links {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
     }
     .link-btn {
-      font-size: 1rem;
-      padding: 12px;
+      background: #fff;
+      color: #764ba2;
+      font-weight: 600;
+      font-size: 1.1rem;
+      padding: 15px;
+      border-radius: 12px;
+      text-decoration: none;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      transition: background-color 0.25s ease, color 0.25s ease;
+      user-select: none;
     }
-  }
-</style>
+    .link-btn:hover,
+    .link-btn:focus {
+      background: #764ba2;
+      color: #fff;
+      outline: none;
+    }
+    /* Mobile optimizations */
+    @media (max-height: 600px) {
+      .container {
+        padding: 20px 15px 25px 15px;
+      }
+      h1 {
+        font-size: 1.8rem;
+      }
+      .profile-pic {
+        width: 100px;
+        height: 100px;
+        margin-bottom: 15px;
+      }
+      .link-btn {
+        font-size: 1rem;
+        padding: 12px;
+      }
+    }
+  </style>
 </head>
 <body>
   <main class="container" role="main" aria-label="User Linktree Dashboard">
-    <img class="profile-pic" src="https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=120&w=120" alt="User profile picture" />
+    <img class="profile-pic" src="https://images.pexels.com/photos/771742/pexels-photo-771742.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=120&w=120" alt="User profile picture" />
     <h1>Alex Johnson</h1>
-    <p class="description">Creative Designer & Web Developer</p>
+    <p class="description">Creative Designer &amp; Web Developer</p>
     <nav class="links" aria-label="Social links">
-      <a class="link-btn" href="https://alexjohnson.com" target="_blank" rel="noopener" >Personal Website</a>
-      <a class="link-btn" href="https://twitter.com/alexjohnson" target="_blank" rel="noopener" >Twitter</a>
-      <a class="link-btn" href="https://instagram.com/alexjohnson" target="_blank" rel="noopener" >Instagram</a>
-      <a class="link-btn" href="https://www.linkedin.com/in/alexjohnson" target="_blank" rel="noopener" >LinkedIn</a>
-      <a class="link-btn" href="mailto:alex@example.com" target="_blank" rel="noopener" >Contact Me</a>
+      <a class="link-btn" href="https://alexjohnson.com" target="_blank" rel="noopener noreferrer">Personal Website</a>
+      <a class="link-btn" href="https://twitter.com/alexjohnson" target="_blank" rel="noopener noreferrer">Twitter</a>
+      <a class="link-btn" href="https://instagram.com/alexjohnson" target="_blank" rel="noopener noreferrer">Instagram</a>
+      <a class="link-btn" href="https://www.linkedin.com/in/alexjohnson" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      <a class="link-btn" href="mailto:alex@example.com" target="_blank" rel="noopener noreferrer">Contact Me</a>
     </nav>
   </main>
 </body>
